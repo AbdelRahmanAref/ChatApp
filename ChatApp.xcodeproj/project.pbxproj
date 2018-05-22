@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6F92EE1513119973FFDEC55A /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002D62425F419D9B51466599 /* Pods_ChatApp.framework */; };
 		E4C01C7920B4B6F600023070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C01C7820B4B6F600023070 /* AppDelegate.swift */; };
-		E4C01C7B20B4B6F600023070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C01C7A20B4B6F600023070 /* ViewController.swift */; };
 		E4C01C7E20B4B6F700023070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C01C7C20B4B6F700023070 /* Main.storyboard */; };
 		E4C01C8020B4B71B00023070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C01C7F20B4B71B00023070 /* Assets.xcassets */; };
 		E4C01C8320B4B71C00023070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C01C8120B4B71C00023070 /* LaunchScreen.storyboard */; };
 		E4C01C8E20B4BCDF00023070 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C01C8D20B4BCDF00023070 /* SWRevealViewController.m */; };
+		E4C01C9320B4C90300023070 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C01C9220B4C90300023070 /* ChatVC.swift */; };
+		E4C01C9520B4C91100023070 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C01C9420B4C91100023070 /* ChannelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,6 @@
 		9E187EF7E0EC23E3E90B3FDE /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E4C01C7520B4B6F600023070 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C01C7820B4B6F600023070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4C01C7A20B4B6F600023070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4C01C7D20B4B6F700023070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4C01C7F20B4B71B00023070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4C01C8220B4B71C00023070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +30,8 @@
 		E4C01C8B20B4BCDD00023070 /* ChatApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		E4C01C8C20B4BCDF00023070 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E4C01C8D20B4BCDF00023070 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E4C01C9220B4C90300023070 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		E4C01C9420B4C91100023070 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,6 @@
 		E4C01C6C20B4B6F300023070 = {
 			isa = PBXGroup;
 			children = (
-				E4C01C8A20B4BC6500023070 /* Supporting Files */,
 				E4C01C7720B4B6F600023070 /* ChatApp */,
 				E4C01C7620B4B6F600023070 /* Products */,
 				40131C51E0B433C1A6466CD6 /* Pods */,
@@ -83,8 +84,11 @@
 		E4C01C7720B4B6F600023070 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				E4C01C9120B4C8DF00023070 /* Model */,
+				E4C01C9020B4C8DA00023070 /* View */,
+				E4C01C8F20B4C8D200023070 /* Controller */,
+				E4C01C8A20B4BC6500023070 /* Supporting Files */,
 				E4C01C7820B4B6F600023070 /* AppDelegate.swift */,
-				E4C01C7A20B4B6F600023070 /* ViewController.swift */,
 				E4C01C7C20B4B6F700023070 /* Main.storyboard */,
 				E4C01C7F20B4B71B00023070 /* Assets.xcassets */,
 				E4C01C8120B4B71C00023070 /* LaunchScreen.storyboard */,
@@ -101,6 +105,29 @@
 				E4C01C8B20B4BCDD00023070 /* ChatApp-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4C01C8F20B4C8D200023070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4C01C9220B4C90300023070 /* ChatVC.swift */,
+				E4C01C9420B4C91100023070 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4C01C9020B4C8DA00023070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4C01C9120B4C8DF00023070 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C01C7B20B4B6F600023070 /* ViewController.swift in Sources */,
+				E4C01C9520B4C91100023070 /* ChannelVC.swift in Sources */,
+				E4C01C9320B4C90300023070 /* ChatVC.swift in Sources */,
 				E4C01C7920B4B6F600023070 /* AppDelegate.swift in Sources */,
 				E4C01C8E20B4BCDF00023070 /* SWRevealViewController.m in Sources */,
 			);
@@ -379,7 +407,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdelRahman.ChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/ChatApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ChatApp/Supporting Files/ChatApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +429,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdelRahman.ChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/ChatApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ChatApp/Supporting Files/ChatApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
